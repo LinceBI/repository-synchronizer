@@ -166,7 +166,7 @@ TYPICAL TARGET SEQUENCE
             value="true"
             description="Prefer SVNKit binding over the command line client for native svn support (defaults to true)" />
   <property name="ivy.url"
-            value="http://repo2.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar"
+            value="https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar"
             description="The URL to the current release of Apache IVY" />
   <!-- Test properties -->
   <property name="testsrc.dir" value="${basedir}/test-src" description="Directory that hosts the test source files" />
@@ -385,7 +385,7 @@ TYPICAL TARGET SEQUENCE
       ====================================================================-->
   <target name="antcontrib.download" unless="antcontrib.available">
     <mkdir dir="${subfloor.tmp.dir}" />
-    <get src="http://downloads.sourceforge.net/ant-contrib/ant-contrib-1.0b3-bin.zip"
+    <get src="https://downloads.sourceforge.net/ant-contrib/ant-contrib-1.0b3-bin.zip"
          dest="${subfloor.tmp.dir}/antcontrib.zip"
          usetimestamp="true" />
     <unzip src="${subfloor.tmp.dir}/antcontrib.zip" dest="${subfloor.tmp.dir}">
