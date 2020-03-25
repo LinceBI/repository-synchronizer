@@ -38,7 +38,7 @@
         </parameter>
         <parameter>
             <name>libpensol_jar_file</name>
-            <default_value>libpensol-6.0.0.0-353.jar</default_value>
+            <default_value>libpensol-9.0.0.0-423.jar</default_value>
             <description/>
         </parameter>
         <parameter>
