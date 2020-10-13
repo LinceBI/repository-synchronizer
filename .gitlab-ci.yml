@@ -60,7 +60,7 @@ deploy:release:http:
   variables:
     <<: *variables_release
   script:
-    - "curl -u \"${HTTP_UPLOAD_USER:?}:${HTTP_UPLOAD_PASS:?}\" -T ./dist/repositorySynchronizer-*.zip \"${HTTP_UPLOAD_URL:?}\""
+    - "curl -u \"${REPO_RAW_LINCEBI_RW_USER:?}:${REPO_RAW_LINCEBI_RW_PASSWORD:?}\" -T ./dist/repositorySynchronizer-*.zip \"${REPO_RAW_LINCEBI_URL:?}/repository-synchronizer/\""
   cache:
     <<: *cache
   only:
